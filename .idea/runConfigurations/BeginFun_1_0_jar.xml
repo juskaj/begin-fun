@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="BeginFun-1.0.jar" type="JarApplication">
+    <option name="JAR_PATH" value="$PROJECT_DIR$/target/BeginFun-1.0.jar" />
+    <option name="PROGRAM_PARAMETERS" value="samples/test.beginFun" />
+    <option name="WORKING_DIRECTORY" value="C:\Users\vlavl\OneDrive\Desktop\pkt projektas\BeginFun" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <method v="2" />
+  </configuration>
+</component>

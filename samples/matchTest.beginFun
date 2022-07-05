@@ -1,0 +1,30 @@
+String tst = "abcde";
+Int ppp = 10;
+Int pppp = 10;
+String abc = "abc";
+String bb = "bb";
+
+String result = {
+    matchstring tst = "ab..a" => "ab..f";
+    matchstring tst = "ab..d" => "ab..d";
+    matchstring tst = "ab..e" => "ab..e";
+    default => "not found";
+};
+
+String tst = {
+    matchstring abc = "a?b." => "abc";
+    matchnum ppp >= 10 => "greater";
+    default => "cba";
+};
+
+Int a = 3;
+Int b = 5;
+
+Int x = {
+    matchnum a == 0 => 0;
+    matchnum b == 0 => 0;
+    default => a * b;
+};
+
+print(x);
+

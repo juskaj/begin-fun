@@ -1,0 +1,98 @@
+fun FibRec(Int n) => Int begin fun
+    if(n <= 1) then begin if
+        break fun => n
+    end if
+end fun => FibRec(n - 1) + FibRec(n - 2)
+
+fun FibLoop(Int n) => Int begin fun
+    Int count = 2;
+    Int sum = 0;
+    Int a = 0;
+    Int b = 1;
+    while(count <= n) do
+        sum = a + b;
+        a = b;
+        b = sum;
+        count = count + 1;
+    end while
+end fun => sum
+
+fun TestFun(Int n) => Int begin fun
+    if(n < 10) then
+    begin if
+        break fun => n
+    end if
+end fun => TestFun(n - 1)
+
+print(TestFun(20));
+
+Int sum = 0;
+while(sum < 100) do
+    sum = sum + 1;
+end while
+print(sum);
+
+String tst = "abcde";
+
+String result = {
+    matchstring tst = "ab..a" => "ab..f";
+    matchstring tst = "ab..d" => "ab..d";
+    matchstring tst = "ab..e" => "ab..e";
+    default => "not found";
+};
+
+print(result);
+
+{aa, ab, ac, ad} <= {10, "ab", true, 50};
+print(aa);
+print(ab);
+print(ac);
+print(ad);
+print(aa + ad);
+
+Int ppp = 10;
+Int pppp = 10;
+String abc = "abc";
+String bb = "bb";
+print(abc..bb);
+Bool tt = true;
+Bool ff = false;
+
+if(!tt) then begin if
+    print("True");
+end if
+
+if(((ppp + pppp) > 10) && ((ppp - pppp) > 100)) then begin if
+    print("asdasd");
+end if
+
+String tst = {
+    matchstring abc = ".b?." => "abc";
+    matchnum ppp >= 10 => "greater";
+    default => "cba";
+};
+
+print(tst);
+
+Int bb = 10;
+print(bb);
+bb = 20;
+print(bb);
+
+Int[3] aa = [1, 2, 3];
+print(aa[1]);
+aa[1] = 10;
+print(aa[1]);
+
+print("Calculating Fibonacci sequence with while loop...");
+write("Test.txt", "Fibonacci with loop: ", false);
+Int d = FibLoop(10);
+print("Writing...");
+write("Test.txt", d, true);
+
+print("Calculating Fibonacci sequence with recursion...");
+write("Test.txt", "\nFibonacci with recursion: ", true);
+Int c = FibRec(10);
+write("Test.txt", c, true);
+print("Writing...");
+
