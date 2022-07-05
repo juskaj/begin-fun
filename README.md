@@ -1,5 +1,5 @@
 # BeginFun
-Simple programing language created with ANTLR4 Visitor.
+This project was made for studying purposes. Simple programing language created with ANTLR4 Visitor.
 
 #### Tools
     Oracle OpenJDK 17.0.2
